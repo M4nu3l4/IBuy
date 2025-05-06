@@ -1,0 +1,82 @@
+/* src/custom-theme.css */
+
+/* Sfondo radiale per tutto il body */
+body {
+    min-height: 100vh;
+    background: #9fa6a2;
+    background: linear-gradient(90deg, rgba(159, 166, 162, 1) 50%, rgba(240, 238, 235, 1) 100%);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  }
+  
+  /* card Bootstrap */
+  .card {
+    border-radius: 1.25rem !important;
+    box-shadow: 0 8px 24px 0 rgba(63, 94, 251, 0.08), 0 1.5px 7px 0 rgba(0,0,0,0.03);
+    transition: transform 0.18s cubic-bezier(.17,.67,.83,.67), box-shadow 0.18s;
+    border: none !important;
+    background: rgba(255,255,255,0.92);
+  }
+  
+  .card:hover {
+    transform: translateY(-4px) scale(1.015);
+    box-shadow: 0 16px 32px 0 rgba(63,94,251,0.16), 0 2.5px 11px 0 rgba(0,0,0,0.06);
+  }
+  
+  /*bottoni delle card */
+  .card .btn-primary, .card .btn-outline-success {
+    border-radius: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  
+  /* sezione ProductDetail*/
+  .product-detail-container {
+    max-width: 650px;
+    margin: 36px auto 0 auto;
+    background: rgba(255,255,255,0.97);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 28px 0 rgba(63,94,251,0.10), 0 1.5px 7px 0 rgba(0,0,0,0.03);
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Immagine prodotto dettagli */
+  .product-detail-container img {
+    max-width: 340px;
+    max-height: 220px;
+    border-radius: 1.1rem;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Titolo centrato */
+  .product-detail-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #3558dc;
+    font-weight: 700;
+  }
+  
+  .product-detail-container .btn-outline-success {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  
+  @media (max-width: 576px) {
+    .product-detail-container {
+      padding: 1rem;
+      max-width: 97vw;
+    }
+  }
+ 
+  h1 {
+    font-size: 60px;
+    background: linear-gradient(83deg, #000 40%, #eee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /*text-fill-color: transparent;*/
+    }

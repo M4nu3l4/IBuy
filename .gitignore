@@ -1,0 +1,16 @@
+# VS Code
+.vscode/
+*.user
+*.suo
+
+# Node modules
+node_modules/
+dist/
+
+# Build output .NET
+bin/
+obj/
+.vs/
+
+# Ambiente
+.env
