@@ -1,6 +1,10 @@
 
 # 🛒 IBuy - E-Commerce React + ASP.NET Core
 
+![GitHub last commit](https://img.shields.io/github/last-commit/M4nu3l4/IBuy?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/M4nu3l4/IBuy?style=flat-square)
+
+
 **IBuy** è una moderna piattaforma E-Commerce full-stack sviluppata come progetto capstone da [Manuela Lissia]. L'applicazione consente ad utenti registrati e non di navigare, selezionare, acquistare e gestire ordini in modo sicuro e intuitivo.
 
 ---
