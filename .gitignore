@@ -1,17 +1,43 @@
-# VS Code
-.vscode/
+# ============================
+# 👉 GITIGNORE COMPLETO PER IBUY (React + ASP.NET Core)
+# ============================
+
+# Visual Studio
+.vs/
 *.user
 *.suo
+*.vsidx
 
-# Node modules
-node_modules/
-dist/
-
-# Build output .NET
+# Build output
 bin/
 obj/
-.vs/
+out/
 
-# Ambiente
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+*.db
+*.mdf
+
+# Node.js (React frontend)
+node_modules/
+dist/
 .env
-.vs/
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Log e dati temporanei
+*.log
+*.tmp
+*.temp
+
+# Mac/Linux/Windows system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
