@@ -117,8 +117,7 @@ dotnet ef database update
 dotnet run
 Frontend (React)
 bash
-Copia
-Modifica
+
 cd IBuyFE
 npm install
 npm run dev
