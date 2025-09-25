@@ -18,7 +18,7 @@ namespace IBuy.API.Mapping
             // UpdateProductDto -> Product
             CreateMap<UpdateProductDto, Product>();
 
-            // Product -> UpdateProductDto (per editing se serve)
+            // Product -> UpdateProductDto 
             CreateMap<Product, UpdateProductDto>();
         }
     }
