@@ -1,12 +1,12 @@
 ﻿using IBuy.API.DTOs;
-using IBuy.API.Models; // <--- AGGIUNGI per la nuova entità
+using IBuy.API.Models; 
 using IBuy.API.Services;
-using Microsoft.AspNetCore.Authorization; // <--- AGGIUNGI per protezione endpoint extra
+using Microsoft.AspNetCore.Authorization; 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;      // <--- AGGIUNGI per .FirstOrDefaultAsync
-using System.Security.Claims;             // <--- AGGIUNGI per Claims
-// AGGIUNGI usando il tuo ApplicationDbContext (o come si chiama il tuo DbContext)
+using Microsoft.EntityFrameworkCore;     
+using System.Security.Claims;             
+
 using IBuy.API.Data;
 
 namespace IBuy.API.Controllers
@@ -19,7 +19,7 @@ namespace IBuy.API.Controllers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly TokenService _tokenService;
         private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly IBuyDbContext _context; // <--- AGGIUNGI per accesso DB
+        private readonly IBuyDbContext _context; 
 
         public UserController(
             UserManager<IdentityUser> userManager,
@@ -120,7 +120,7 @@ namespace IBuy.API.Controllers
                         Cap = dto.Cap,
                         Phone = dto.Phone,
                         DiscountCode = dto.DiscountCode,
-                        CreditCard = dto.CreditCard,   // <--- AGGIUNGI QUESTI CAMPI!
+                        CreditCard = dto.CreditCard,  
                         IBAN = dto.IBAN
                     };
                     _context.CustomerDetails.Add(details);
@@ -132,7 +132,7 @@ namespace IBuy.API.Controllers
                     existing.Cap = dto.Cap;
                     existing.Phone = dto.Phone;
                     existing.DiscountCode = dto.DiscountCode;
-                    existing.CreditCard = dto.CreditCard;   // <--- AGGIUNGI QUESTI CAMPI!
+                    existing.CreditCard = dto.CreditCard;  
                     existing.IBAN = dto.IBAN;
                     _context.CustomerDetails.Update(existing);
                 }
