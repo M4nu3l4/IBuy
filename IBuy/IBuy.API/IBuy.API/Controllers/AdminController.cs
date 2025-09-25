@@ -31,7 +31,7 @@ namespace IBuy.API.Controllers
                 await _roleManager.CreateAsync(new IdentityRole(dto.Role));
 
             var roles = await _userManager.GetRolesAsync(user);
-            await _userManager.RemoveFromRolesAsync(user, roles); // rimuove ruoli attuali
+            await _userManager.RemoveFromRolesAsync(user, roles); 
             await _userManager.AddToRoleAsync(user, dto.Role);
 
             return Ok($"Ruolo '{dto.Role}' assegnato a {dto.Email}");
@@ -57,7 +57,7 @@ namespace IBuy.API.Controllers
         [HttpDelete("delete-user")]
         public async Task<IActionResult> DeleteUser([FromQuery] string email)
         {
-            // LOG PER DEBUG - PUOI RIMUOVERE DOPO
+            // LOG PER DEBUG 
             Console.WriteLine($"Tentativo di eliminare utente con email: {email}");
 
             var user = await _userManager.FindByEmailAsync(email);
