@@ -17,7 +17,7 @@ public class CustomerDetailsDto
     [MaxLength(50)]
     public string? DiscountCode { get; set; }
 
-    // NUOVI CAMPI
+  
     [MaxLength(25)]
     public string? CreditCard { get; set; }
     [MaxLength(34)]
